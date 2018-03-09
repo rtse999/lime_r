@@ -2,7 +2,7 @@
 # Description: "Announcing lime - Explaining the predictions of black-box models"
 # Link: https://www.data-imaginist.com/2017/announcing-lime/
 #
-# Location:
+# Location: /Users/raymondtse/Dropbox/Analysis/R packages/lime/announcinglime.r
 # First created: 14:10 - Friday 9 March 2018
 # Last modified: 14:10 - Friday 9 March 2018
 # ------------------------------------------------------------------------
