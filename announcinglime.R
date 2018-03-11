@@ -24,7 +24,7 @@ library(lime)
 library(MASS)
 
 # ------------------------------------------------------------------------
-# Build
+# Modelling
 # ------------------------------------------------------------------------
 data(biopsy)
 
@@ -46,6 +46,9 @@ model <- lda(biopsy[-test_set, ], prediction[-test_set])
 
 sum(predict(model, biopsy[test_set, ])$class == prediction[test_set])/100
 
+# ------------------------------------------------------------------------
+# Train explainer using lime 
+# ------------------------------------------------------------------------
 # Train the explainer
 explainer <- lime(biopsy[-test_set,], model, bin_continuous = TRUE, quantile_bins = FALSE)
 
